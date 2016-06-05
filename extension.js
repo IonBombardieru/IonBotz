@@ -48,8 +48,8 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "IonBot",
       language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      chatLink: "https://github.com/IonBombardieru/IonBotz/blob/master/lang/en.json",
+      scriptLink: "https://github.com/IonBombardieru/IonBotz/blob/master/extension.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 200, // 1-200
       startupVolume: 10, // 0-100
@@ -105,13 +105,13 @@
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://github.com/IonBombardieru/IonBotz/blob/master/blacklists/NSFWlist.json",
+        OP: "https://github.com/IonBombardieru/IonBotz/blob/master/blacklists/OPlist.json",
+        BANNED: "https://github.com/IonBombardieru/IonBotz/blob/master/blacklists/BANNEDlist.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://github.com/IonBombardieru/IonBotz/blob/master/extension.js", extend);
 
 }).call(this);
